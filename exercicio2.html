@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+        var par = 0;
+
+        function pares(num1, num2){
+           for(var i = num1; i <= num2; i++){
+               if(i % 2 == 0){
+                  par = par + i + ", "; 
+               }
+           }
+
+           return par;
+        }
+
+        console.log(pares(32, 321));
+
+        </script>
+    </body>
+</html>
