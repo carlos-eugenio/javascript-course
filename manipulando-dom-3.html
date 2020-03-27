@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+        <script>
+            
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+
+            /*
+            var containerElement = document.querySelector('#app');
+            var ulElement = document.createElement('ul');
+            ulElement.classList.add('ulClass');
+
+            for (var item of nomes) 
+                 var liElement = document.createElement('li')
+                 var textElement = document.createTextNode(item)
+                 liElement.appendChild(textElement)
+                 ulElement.appendChild(liElement)
+            ;
+
+            containerElement.appendChild(ulElement);  
+            */
+
+
+            var containerElement = document.querySelector('#app');
+            var ulElement = document.createElement('ul');
+            ulElement.classList.add('ulClass');
+
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nomes[0]);
+            liElement.appendChild(textElement);
+            ulElement.appendChild(liElement);
+
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nomes[1]);
+            liElement.appendChild(textElement);
+            ulElement.appendChild(liElement);
+
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nomes[2]);
+            liElement.appendChild(textElement);
+            ulElement.appendChild(liElement);
+
+            containerElement.appendChild(ulElement);  
+
+        </script>
+    </body>
+</html>
